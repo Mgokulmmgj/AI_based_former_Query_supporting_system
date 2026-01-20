@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Farmer Query System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌾 AI Farmer Query Supporting System</h1>
+    <p>Ask your agriculture-related questions below</p>
+
+    <textarea id="question" placeholder="Ask your question here..."></textarea>
+    <button onclick="askQuestion()">Ask AI</button>
+
+    <div id="answerBox">
+        <h3>Answer:</h3>
+        <p id="answer"></p>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
